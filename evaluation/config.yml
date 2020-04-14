@@ -1,0 +1,35 @@
+directories:
+  gt: ./../data/ground_truth_SG_test/
+  ocr: ./../data/ocr_results/
+ocr_engines:
+    - _binarized_ocr_kraken_default
+    - _binarized_ocr_kraken_model_16.mlmodel
+    - _binarized_ocr_tesseract_default
+lm_models:
+    - ./Language_models/models/SimonGabay_train_100%_bilstm_2gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_bilstm_3gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_bilstm_4gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_bilstm_5gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_bilstm_6gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_bilstm_7gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_bilstm_8gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_bilstm_9gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_bilstm_10gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_lstm_2gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_lstm_3gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_lstm_4gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_lstm_5gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_lstm_6gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_lstm_7gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_lstm_8gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_lstm_9gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_lstm_10gram_100epochs.model
+    - ./Language_models/models/SimonGabay_train_100%_simple_proba_LM_2gram.model
+    - ./Language_models/models/SimonGabay_train_100%_simple_proba_LM_3gram.model
+    - ./Language_models/models/SimonGabay_train_100%_simple_proba_LM_4gram.model
+    - ./Language_models/models/SimonGabay_train_100%_simple_proba_LM_5gram.model
+    - ./Language_models/models/SimonGabay_train_100%_simple_proba_LM_6gram.model
+    - ./Language_models/models/SimonGabay_train_100%_simple_proba_LM_7gram.model
+    - ./Language_models/models/SimonGabay_train_100%_simple_proba_LM_8gram.model
+    - ./Language_models/models/SimonGabay_train_100%_simple_proba_LM_9gram.model
+    - ./Language_models/models/SimonGabay_train_100%_simple_proba_LM_10gram.model

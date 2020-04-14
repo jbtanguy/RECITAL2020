@@ -1,0 +1,22 @@
+directories:
+  source: ./data/SG_test/
+  img: ./data/img/
+  img_for_ocr: ./data/img/preprocessed/
+  ocr: ./data/ocr_results/
+params:
+  ext: .jpg
+  dpi: 400
+  split: True
+  nb_split: 2
+preprocessings:
+  binarization_kraken: True
+  grayscale: False
+  thresholding: True
+  remove_noise: False
+  dilation: False
+  erosion: False
+  opening: False
+  canny_edge_detection: False
+kraken:
+  model_default: ./data/models/en_best.mlmodel
+  model_17: ./data/models/model_16.mlmodel

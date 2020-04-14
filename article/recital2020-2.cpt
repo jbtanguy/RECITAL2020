@@ -1,0 +1,1 @@
+Corrélations et \textit{p-values} calculées entre les métriques d'estimation et le \textit{CER}. Modèles d'OCR : modèles \verb!Kraken! (anglais), \verb!Tesseract! (français) et modèle \verb!Kraken! (français du XVII\ieme~siècle). Types de modèles de langue : probabilités conditionnelles, LSTM et biLSTM.^^E^^L 

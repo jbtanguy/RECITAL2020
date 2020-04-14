@@ -1,0 +1,119 @@
+\begin{thebibliography}{~~~}
+
+\bibitem[\protect\citename{Berg-Kirkpatrick \& Klein,
+  }2014]{BergKirkpatrick2014a}
+{\sc Berg-Kirkpatrick T. \& Klein D.} (2014).
+\newblock Improved typesetting models for historical ocr.
+\newblock In {\sc K. Toutanova \& H. Wu}, \'Eds., {\em \ifFABR Actes de \else
+  Proceedings of the \fi 52nd Annual Meeting of the Association for
+  Computational Linguistics (Volume 2: Short Papers)}, volume~2, p.\ 118--123,
+  Baltimore, Maryland, \ifFABR États-Unis\else USA\fi: Association for
+  Computational Linguistics.
+
+\bibitem[\protect\citename{Bermes, }2020]{Bermes2020a}
+{\sc Bermes E.} (2020).
+\newblock {\em Le num{\'e}rique en biblioth{\`e}que: naissance d'un patrimoine:
+  l'exemple de la Biblioth{\`e}que nationale de France (1997-2019)}.
+\newblock Th\`ese de doctorat, Paris, Ecole nationale des chartes.
+
+\bibitem[\protect\citename{Breuel {\em et~al.}, }2013]{Breuel2013a}
+{\sc Breuel T.~M., Ul-Hasan A., Al-Azawi M.~A. \& Shafait F.} (2013).
+\newblock High-performance ocr for printed english and fraktur using lstm
+  networks.
+\newblock In {\em \ifFABR Actes de \else Proceedings of the \fi 12th
+  International Conference on Document Analysis and Recognition}, ICDAR'13, p.\
+  683--687, Washington, DC, \ifFABR États-Unis\else USA\fi: IEEE  IEEE
+  Computer Society.
+
+\bibitem[\protect\citename{Chen {\em et~al.}, }1998]{Chen1998a}
+{\sc Chen S.~F., Beeferman D. \& Rosenfeld R.} (1998).
+\newblock Evaluation metrics for language models.
+\newblock In {\em \ifFABR Actes de \else Proceedings of the \fi DARPA Broadcast
+  News Transcription and Understanding Workshop}, p.\ 275--280, Lansdowne,
+  Virginia, \ifFABR États-Unis\else USA\fi: Carnegie Mellon University.
+
+\bibitem[\protect\citename{Gabay, }2019]{Gabay2019a}
+{\sc Gabay S.} (2019).
+\newblock Ocrising 17th french prints.
+\newblock \url{https://editiones.hypotheses.org/1958}.
+
+\bibitem[\protect\citename{Gupta {\em et~al.}, }2015]{Gupta2015a}
+{\sc Gupta A., Gutierrez-Osuna R., Christy M., Capitanu B., Auvil L., Grumbach
+  L., Furuta R. \& Mandell L.} (2015).
+\newblock Automatic assessment of ocr quality in historical documents.
+\newblock In {\em \ifFABR Actes de \else Proceedings of the \fi Twenty-Ninth
+  AAAI Conference on Artificial Intelligence}, p.\ 1735--1741, Austin, Texas,
+  \ifFABR États-Unis\else USA\fi.
+
+\bibitem[\protect\citename{Kiessling, }2019]{Kiessling2019a}
+{\sc Kiessling B.} (2019).
+\newblock Kraken-an universal text recognizer for the humanities.
+\newblock In {\sc  ADHO}, \'Ed., {\em \ifFABR Actes de \else Proceedings of the
+  \fi Digital Humanities Conference 2019 - DH2019}, Utrecht, \ifFABR
+  Pays-Bas\else The Netherlands\fi.
+
+\bibitem[\protect\citename{Lejeune \& Abiven, }2019]{Lejeune2019a}
+{\sc Lejeune G. \& Abiven K.} (2019).
+\newblock Analyse automatique de documents anciens: tirer parti d’un corpus
+  incomplet, h{\'e}t{\'e}rog{\`e}ne et bruit{\'e}.
+\newblock {\em Information Retrieval, Document and Semantic Web}, {\bf 19}(1).
+
+\bibitem[\protect\citename{Smith, }2007]{Smith2007a}
+{\sc Smith R.} (2007).
+\newblock An overview of the tesseract ocr engine.
+\newblock In {\em \ifFABR Actes de \else Proceedings of the \fi Ninth
+  International Conference on Document Analysis and Recognition (ICDAR 2007)},
+  volume~2, p.\ 629--633, Parana, \ifFABR Brésil\else Brazil\fi: IEEE.
+
+\bibitem[\protect\citename{Springmann {\em et~al.}, }2016]{Springmann2016a}
+{\sc Springmann U., Fink F. \& Schulz K.~U.} (2016).
+\newblock Automatic quality evaluation and (semi-) automatic improvement of ocr
+  models for historical printings.
+\newblock {\em ArXiv e-prints}.
+
+\bibitem[\protect\citename{Springmann \& L{\"u}deling, }2016]{Springmann2016b}
+{\sc Springmann U. \& L{\"u}deling A.} (2016).
+\newblock Ocr of historical printings with an application to building
+  diachronic corpora: A case study using the ridges herbal corpus.
+\newblock {\em ArXiv e-prints}.
+
+\bibitem[\protect\citename{Springmann {\em et~al.}, }2014]{Springmann2014a}
+{\sc Springmann U., Najock D., Morgenroth H., Schmid H., Gotscharek A. \& Fink
+  F.} (2014).
+\newblock Ocr of historical printings of latin texts: problems, prospects,
+  progress.
+\newblock In {\em \ifFABR Actes de \else Proceedings of the \fi First
+  International Conference on Digital Access to Textual Cultural Heritage
+  (DATeCH'14)}, p.\ 71--75, New York, NY, \ifFABR États-Unis\else USA\fi:
+  Association for Computing Machinery.
+
+\bibitem[\protect\citename{Springmann {\em et~al.}, }2018]{Springmann2018a}
+{\sc Springmann U., Reul C., Dipper S. \& Baiter J.} (2018).
+\newblock Ground truth for training ocr engines on historical documents in
+  german fraktur and early modern latin.
+\newblock {\em arXiv e-prints arXiv:1809.05501}.
+
+\bibitem[\protect\citename{Ul-Hasan {\em et~al.}, }2016]{UlHasan2016a}
+{\sc Ul-Hasan A., Bukhari S.~S. \& Dengel A.} (2016).
+\newblock Ocroract: A sequence learning ocr system trained on isolated
+  characters.
+\newblock In {\em \ifFABR Actes de \else Proceedings of the \fi 12th IAPR
+  Workshop on Document Analysis Systems (DAS)}, p.\ 174--179, Santorini,
+  \ifFABR Grèce\else Greece\fi: IEEE.
+
+\bibitem[\protect\citename{Vamvakas {\em et~al.}, }2008]{Vamvakas2008a}
+{\sc Vamvakas G., Gatos B., Stamatopoulos N. \& Perantonis S.~J.} (2008).
+\newblock A complete optical character recognition methodology for historical
+  documents.
+\newblock In {\em \ifFABR Actes de \else Proceedings of the \fi Eighth IAPR
+  International Workshop on Document Analysis Systems}, p.\ 525--532, Nara,
+  \ifFABR Japon\else Japan\fi: IEEE.
+
+\bibitem[\protect\citename{Wick {\em et~al.}, }2018]{Wick2018a}
+{\sc Wick C., Reul C. \& Puppe F.} (2018).
+\newblock Comparison of ocr accuracy on early printed books using the open
+  source engines calamari and ocropus.
+\newblock {\em ACM/IEEE Joint Conference on Digital Libraries 2018 (JCDL
+  2018)}, {\bf 33}(1), 79--96.
+
+\end{thebibliography}
