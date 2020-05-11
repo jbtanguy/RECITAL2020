@@ -346,25 +346,33 @@ les modèles de langue appris et les mesures d'évaluation à comparer au \texti
         
 	   \subsubsection{Agrégations des probabilités des modèles de langue}\label{metrics}
 	       \paragraph{La somme des probabilités}
-	       Une première métrique peut être simplement la somme des probabilités renvoyées par les modèles de langue. Pour une
-	       sortie d'OCR, on a donc : 
+	       Une première métrique peut être la somme des probabilités renvoyées par les modèles de langue. Sous réserve que les 
+           modèles de langue sont bien des distributions de probabilités, la somme des probabilités d'une suite de caractères 
+           correspondant à du texte est de 1 alors qu'elle ne peut l'être dans le cas contraire. Ainsi,
+           pour une
+	       sortie d'OCR, on a : 
 	       $$S = \sum_{i=n+1}^{C-n}P_{LM}(c_{i} | h_{n,i})$$
 	       Avec $P_{LM}$ la probabilité renvoyée par un modèle de langue $LM$, $n$ 
 	       la taille de la fenêtre glissante en caractères, $C$ le nombre total de caractères de la sortie d'OCR, $c_{i}$ 
 	       le $i$\ieme~caractère de la sortie d'OCR et $h_{n,i}$ l'historique de $n$ caractères du caractère $c_{i}$.
 
 	       \paragraph{Le produit des probabilités}
-	       De la même manière, le produit des probabilités peut constituer une autre métrique d'estimation. Il est défini
+	       Le produit des probabilités peut aussi constituer une autre métrique d'estimation. Il rend compte de
+           la probabilité d'une suite de caractères selon l'hypothèse, ici réductrice, de l'indépendance. 
+           Il est défini
 	       comme :
 	       $$Pr = \prod_{i=n+1}^{C-n}P_{LM}(c_{i} | h_{n,i})$$
 
 	       \paragraph{La perplexité}
 	       Plus couramment utilisée pour juger de la qualité d'un modèle de langue, la perplexité est la probabilité inverse de la sortie
-	       d'OCR normalisée par son nombre de caractères. Elle est définie comme : 
+	       d'OCR normalisée par son nombre de caractères. Puisqu'elle mesure la distance entre la fonction de probabilités et les données de l'ensemble
+           de test, elle semble pertinente à tester comme métrique d'estimation.
+           Elle est définie comme : 
 	        $$PP = \frac{1}{(\prod_{i=n+1}^{C-n}P_{LM}(c_{i} | h_{n,i}))^{\frac{1}{C-n}}}$$
 
 	       \paragraph{La log-perplexité}
-	       $$log(PP)$$
+           Enfin, la log-perplexité peut aussi constituer une métrique d'estimation ; \cite{Chen1998a} montrent qu'elle aussi est corrélée au 
+           \textit{WER} dans le domaine de la reconnaissance de la parole.
 
 	    \subsubsection{\'{E}chelles de calcul des agrégations}\label{echelle}
 	    Les agrégations des probabilités précitées peuvent être calculées à plusieurs échelles : celle de l'\oe{}uvre, de la page, de la ligne 
