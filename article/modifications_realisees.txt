@@ -1,0 +1,37 @@
+- correction des coquilles : 
+	- p1 : résumé en anglais 
+		"the CER calculate" -> "the CER calculates"
+		"the more suitable" -> "the most suitable"
+		"these ground truth" -> "these ground truths"
+		"OCR Software Outputs Qualities -> "OCR Software Output Qualities"
+		"to estimate OCR outputs qualities" -> "to estimate OCR output qualities"
+		"these language models based" -> "these language model based"
+	- p2 :la note sur les Mazarinades doit se trouver au niveau de la première occurrence du terme
+	- p4 : "du manque transcriptions" -> "du manque de transcriptions"
+	- p5 : "océrisaion" -> "océrisation"
+
+Section 2 :
+	- paragraphe "Exploiter les modèles de langue" : les modèles de langue n'ont, dans la limite de nos connaissances, pas encore
+	été utilisés pour évaluer des sorties d'OCR
+
+Section 3 :
+	Sous-section 2 : 
+		- paragraphe "Application des modèles" : clarification des résultats des modèles d'OCR sur l'exemple. Les lignes présentées sont le résultat des modèles d'OCR
+		intervenant dans l'étude et les CER ont été calculés sur la référence présentée en Figure 1.
+	Sous-section 3 :
+		- Modèles de langue : justification du choix des trois types de modèles de langue
+			- modèles à probabilités conditionnelles : simple à apprendre, ils constituent ici une baseline
+			- modèles LSTM et biLSTM :
+				- modèles à comparer aux modèles baseline
+				- choisis car ce sont des réseaux de neurones
+				- représentant des réseaux de neurones récurrents 
+				- LSTM et biLSTM pour observer l'influence d'une couche bidirectionnelle
+				- précision sur le nombre d'époque : 100
+		- Métrique d'estimation : explicitation du choix des métriques 
+Section 4 :
+	Sous-section 2 : 
+		Précision sur la p-value : il s'agit du test de corrélation face à l'hypothèse nulle. 
+		Dans la première version, les valeurs inférieures à 0,05 étaient mises en gras (elles correspondent à une forte présomption contre l'hypothèse nulle)
+		Puisque peu de valeurs sont concernées, nous choisissons ici de mettre en lumière les valeurs inférieures à 0,1 pour en augmenter le nombre
+		(toutefois, entre 0,05 et 0,1, la p-value indique une faible présomption contre l'hypothèse nulle)
+		Les valeurs mises en lumières le sont en étant en bleu et en gras. 
