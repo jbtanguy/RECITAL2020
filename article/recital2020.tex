@@ -37,10 +37,11 @@ logiciels d'OCR pour des documents français du XVII\ieme~siècle}
 
 \author{Jean-Baptiste Tanguy\\
   {\small
-    LabEx OBVIL, Sorbonne Université, 1 rue Victor Cousin, 75005, Paris \\ 
+    CELLF, STIH, Sorbonne Université, 1 rue Victor Cousin, 75005, Paris, France \\ 
     \texttt{
       jean-baptiste.tanguy@sorbonne-universite.fr \\ 
 }}}
+
 
 
 \begin{document}
@@ -57,12 +58,12 @@ logiciels d'OCR pour des documents français du XVII\ieme~siècle}
   mesure de référence. 
 }
 
-\abstract{Language Model Based Evaluation of OCR Software Outputs Qualities for 17th Century French Documents}{
+\abstract{Language Model Based Evaluation of OCR Software Output Qualities for 17th Century French Documents}{
   In order to compare two OCR software outputs, the \textit{Character Error Rate} (or, \textit{CER}) is frequently used. 
-  When a quality ground truth exists for several documents, the \textit{CER} calculate the error rate for these
-  documents and therefore allows to choose the more suitable OCR software. However, these ground truth are extremely 
+  When a quality ground truth exists for several documents, the \textit{CER} calculates the error rate for these
+  documents and therefore allows to choose the most suitable OCR software. However, these ground truths are extremely 
   expensive and may slow down some studies. Hence, we are exploring the exploitation of language models by the agregation 
-  (with several methods) of their probabilities in order to estimate OCR outputs qualities. The Pearson correlation is used 
+  (with several methods) of their probabilities in order to estimate OCR output qualities. The Pearson correlation is used 
   to understand how these language models based estimations covary with the \textit{CER}, reference metric.\\
 }
 
@@ -257,9 +258,9 @@ les modèles de langue appris et les mesures d'évaluation à comparer au \texti
     \begin{table}[h]
     \begin{scriptsize}
     {\setlength{\tabcolsep}{0.15cm}
-    \begin{tabular}{llllll}
+    \begin{tabular}{lrlrlr}% aligner les CER à droite plus ajouter des 0
     \multicolumn{1}{c}{\textbf{Lignes Kraken}} & \multicolumn{1}{l}{\textbf{CER}} & \multicolumn{1}{c}{\textbf{Lignes Tesseract}} & \multicolumn{1}{l}{\textbf{CER}} & \multicolumn{1}{c}{\textbf{Lignes Kraken 17}}                                                            & \multicolumn{1}{l}{\textbf{CER}} \\
-                                               & 100 \%                           &                                               & 100 \%                           & ¬                                                                                                        & 100 \%                           \\
+                                               & 100,0 \%                           &                                               & 100,0 \%                           & ¬                                                                                                        & 100,0 \%                           \\
     plus longue iambe n'attire                 & 3,8 \%                         & plus Jongue iambe n'attire                    & 7,6 \%                         & plus longue iambe n’attire                                                                               & 0 \%                             \\
     point lcau de la plus cour-                & 7,4 \%                         & point l'eau de la plus cour-                  & 3,7 \%                         & point l’eau de la plus cour¬                                                                             & 0 \%                             \\
     te, ny par confequent celle du             & 3,4 \%                         & te, ny par confequent celle du                & 3,4 \%                         & te, ny par con\textlongs equent celle du                                                  & 0 \%                             \\
