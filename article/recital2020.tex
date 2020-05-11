@@ -35,11 +35,11 @@
 \title{Exploiter des modèles de langue pour évaluer des sorties de
 logiciels d'OCR pour des documents français du XVII\ieme~siècle}
 
-\author{Untel Trucmuche\\
+\author{Jean-Baptiste Tanguy\\
   {\small
-    Lab, adresse, CP Ville, Pays \\ 
+    LabEx OBVIL, Sorbonne Université, 1 rue Victor Cousin, 75005, Paris \\ 
     \texttt{
-      utrucmuche@lab.fr \\ 
+      jean-baptiste.tanguy@sorbonne-universite.fr \\ 
 }}}
 
 
@@ -75,13 +75,13 @@ logiciels d'OCR pour des documents français du XVII\ieme~siècle}
 Les campagnes de numérisation des collections patrimoniales s'installent à la frontière de deux enjeux relatifs aux 
 documents historiques : leur pérennisation et leur accessibilité. La Bibliothèque Nationale de France, qui a commencé la 
 numérisation de ses fonds au début des années 1990 (avec l'arrivée de Gallica en 1997 \cite{Bermes2020a}), et la Bibliothèque Mazarine, 
-qui a engagé en 2014 la numérisation de sa collection d'incunables et en 2015 celle de ses Mazarinades, sont ici exemplaires. 
+qui a engagé en 2014 la numérisation de sa collection d'incunables et en 2015 celle de ses Mazarinades\footnote{Documents parus en France, lors de la Fronde (1648-1653).}, sont ici exemplaires. 
 Au-delà de la construction d'éditions web, la numérisation de telles collections rend possible leur exploitation automatique 
 à grande échelle, moyennant une transcription de leur contenu textuel. Ceci constitue un réel intérêt, tant pour la communauté
 savante que pour le grand public. Toutefois, deux problèmes majeurs se posent. D'une part, les logiciels 
 de reconnaissance optique de caractères (ou OCR), s'ils offrent des transcriptions automatiques de qualité pour des 
 documents contemporains générés électroniquement, sont nettement moins robustes face à des documents historiques. 
-\cite{Lejeune2019a}, pour le "corpus" des Mazarinades\footnote{Documents parus en France, lors de la Fronde (1648-1653).},
+\cite{Lejeune2019a}, pour le "corpus" des Mazarinades,
 exposent un ensemble d'éléments rendant l'étude de ces documents historiques particulièrement complexe : variantes graphiques,
 abréviations, orthographe erratique mais aussi un "état inégal de conservation [des] imprimés souvent produits dans l’urgence et l’économie de moyens (papier et encre de mauvaise qualité, notamment)". D'autre part, et s'agissant de
 processus automatisés, la connaissance de la qualité des sorties des logiciels d'OCR est primordiale. Néanmoins, l'évaluation
@@ -151,7 +151,7 @@ calculées grâce à des vérités de terrain, pour valider ou réfuter leur per
     \paragraph{Utiliser des pseudo-vérités de terrain}
     \cite{UlHasan2016a} proposent d'utiliser la sortie d'un logiciel d'OCR (en l'occurrence, \verb!Tesseract!)
     comme une pseudo-vérité de terrain sur laquelle est appris un premier modèle. Si l'objectif de ce travail n'est 
-    pas d'estimer la qualité d'une sortie d'OCR, les auteurs se soucient du manque transcriptions à disposition
+    pas d'estimer la qualité d'une sortie d'OCR, les auteurs se soucient du manque de transcriptions à disposition
     et atteignent avec ces pseudo-vérités de terrain des précisions de l'ordre de 95\% sur des documents imprimés du
     XVII\ieme~siècle.
 
@@ -228,7 +228,7 @@ les modèles de langue appris et les mesures d'évaluation à comparer au \texti
 
     \subsection{Océrisation}
     Le corpus dédié à l'océrisation est composé de 120 pages numérisées, toutes avec une résolution de 400dpi. 
-    Afin de réaliser l'océrisaion de ces images, deux logiciels ont été utilisés :
+    Afin de réaliser l'océrisation de ces images, deux logiciels ont été utilisés :
     \begin{itemize}
       \item \verb!Kraken!, version 2.0.8\footnote{http://kraken.re/ et https://pypi.org/project/kraken/} (voir \cite{Kiessling2019a}) ;
       \item \verb!Tesseract!, version 0.3.3\footnote{https://pypi.org/project/pytesseract/} (voir \cite{Smith2007a}).
@@ -647,8 +647,8 @@ français du XVII\ieme~siècle pour reconduire l'expérience avec des modèles d
 
 Les programmes, en Python 3.7, sont mis à disposition sur : \url{https://github.com/anonyme}.
 
-%\section*{Remerciements}
-%Ce travail n'aurait pas été possible sans l'aide de Simon Gabay, Gaël Lejeune et Alice Millour.  
+\section*{Remerciements}
+Ce travail n'aurait pas été possible sans l'aide de Simon Gabay, Gaël Lejeune et Alice Millour.  
 
 \bibliographystyle{jeptaln2020}
 \bibliography{historical_documents_OCR.bib}
