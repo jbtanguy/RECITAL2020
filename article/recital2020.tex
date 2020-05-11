@@ -147,7 +147,8 @@ calculées grâce à des vérités de terrain, pour valider ou réfuter leur per
     \cite{Chen1998a} ont proposé d'utiliser les modèles de langue non pas pour corriger en post-traitement les 
     sorties de reconnaissance d'un flux de parole mais pour estimer la qualité de cette sortie. La perplexité et ses dérivés 
     (comme la log-perplexité) y apparaissent fortement corrélées au \textit{word error rate} (le taux d'erreur mot, ou, 
-    \textit{WER}) avec, pour le premier jeu de données de leur étude, une relation presque parfaitement linéaire.
+    \textit{WER}) avec, pour le premier jeu de données de leur étude, une relation presque parfaitement linéaire. 
+    Néanmoins, pour l'évaluation de sorties d'OCR, les modèles de langue ne semblent pas avoir encore été testés.
 
     \paragraph{Utiliser des pseudo-vérités de terrain}
     \cite{UlHasan2016a} proposent d'utiliser la sortie d'un logiciel d'OCR (en l'occurrence, \verb!Tesseract!)
@@ -158,7 +159,7 @@ calculées grâce à des vérités de terrain, pour valider ou réfuter leur per
 
 Comme \cite{Chen1998a}, nous proposons d'utiliser des modèles de langue (mais appris au grain caractère)
 pour évaluer les sorties des logiciels d'OCR. Il s'agit de récupérer une probabilité pour chaque caractère (voir
-sous-section \ref{metric}), d'agréger ces probabilités et d'observer, comme \cite{Springmann2016a} s'il
+sous-section \ref{metric}), d'agréger ces probabilités et d'observer, comme \cite{Springmann2016a}, s'il
 existe une corrélation entre ces agrégations et la mesure de référence \textit{CER}.
 
 
@@ -286,7 +287,8 @@ les modèles de langue appris et les mesures d'évaluation à comparer au \texti
     \end{scriptsize}
     \end{table}
 
-    Le tableau \ref{ocr} présente un exemple des sorties des trois modèles d'OCR sélectionnés.
+    Le tableau \ref{ocr} présente un exemple d'utilisation des trois modèles d'OCR sélectionnés. Les lignes affichées sont les sorties des modèles et les \textit{CER}
+    ont été calculés face à la référence (présentée dans la figure \ref{pascal}).
 
     \subsection{Apprentissage des modèles de langue}
     Deux types de modèles de langue (au grain caractère) ont été appris sur le sous-corpus dédié (voir la table \ref{tab:souscorpus})
@@ -296,17 +298,23 @@ les modèles de langue appris et les mesures d'évaluation à comparer au \texti
       sachant une séquence de caractères (un historique) ;
       \item des modèles de langue appris par des réseaux de neurones (LSTM et biLSTM).
     \end{itemize}
-    Les premiers types de modèles sont construits en comptant, 
+    Le premier type de modèles constitue une \textit{baseline} puisque ces modèles sont simplement construits en comptant, 
     par fenêtre glissante sur le corpus d'apprentissage, le nombre d'occurrences du caractère suivant
     la séquence de caractères contenue dans la fenêtre glissante. Ces occurrences absolues sont ensuite 
     divisées par la somme des occurrences de tous les caractères suivants cette séquence et sont utilisées
-    comme des probabilités, puisque contenues dans l'intervalle $\left[0;1\right]$. Les seconds sont appris
-    en utilisant les modèles séquentiels de la librairie Python \textit{keras}. Un \textit{mapping} du vocabulaire
+    comme des probabilités, puisque contenues dans l'intervalle $\left[0;1\right]$. 
+
+    Les modèles de langue LSTM et biLSTM ont été choisis pour confronter aux modèles de la \textit{baseline} 
+    des modèles appris par réseaux de neurones, en l'occurrence des réseaux de neurones récurrents. 
+    Ces modèles ont été appris en utilisant les modèles séquentiels de la librairie Python \textit{keras}. Un \textit{mapping} du vocabulaire
     est d'abord réalisé en prétraitement\footnote{\`{A} chaque élément du vocabulaire (entendu comme l'ensemble des caractères 
     différents) est associé un entier dans une table.}. Les réseaux LSTM et biLSTM contiennent tous une couche 
-    \textit{LSTM} et aux réseaux biLSTM est ajoutée une couche \textit{Bidirectional}. La fonction \textit{softmax} est 
-    enfin utilisée comme fonction d'activation. Ces modèles de langue ont été appris sur des séquences de \textit{n} 
-    caractères, pour \textit{n} variant de 2 à 10. Finalement, on dispose donc de $3 * 9 = 27$ modèles de langue
+    \textit{LSTM} et aux réseaux biLSTM est ajoutée une couche \textit{Bidirectional} ; l'hypothèse étant ici que
+    i) tout caractère ne peut suivre tout autre caractère et que
+    ii) tout caractère ne peut être précédé de tout autre caractère.
+    Enfin, la fonction \textit{softmax} est utilisée comme fonction d'activation. Ces modèles de langue ont été appris sur des séquences de \textit{n} 
+    caractères, pour \textit{n} variant de 2 à 10 et le nombre d'époques pour chaque apprentissage est 100. 
+    Finalement, on dispose donc de $3 * 9 = 27$ modèles de langue
     pour tester l'estimation de la qualité des sorties des logiciels d'OCR. Le nombre de caractères dans le vocabulaire de ces
     modèles de langue est de 121.
 
