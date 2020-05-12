@@ -9,6 +9,7 @@
 	- p2 :la note sur les Mazarinades doit se trouver au niveau de la première occurrence du terme
 	- p4 : "du manque transcriptions" -> "du manque de transcriptions"
 	- p5 : "océrisaion" -> "océrisation"
+	- tableau -> table
 
 Section 2 :
 	- paragraphe "Exploiter les modèles de langue" : les modèles de langue n'ont, dans la limite de nos connaissances, pas encore

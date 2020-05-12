@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  27 MAR 2020 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.4)  12 MAY 2020 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -476,6 +476,14 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 (/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
@@ -1028,7 +1036,7 @@ LaTeX Info: Redefining \not on input line 1580.
 Package: newunicodechar 2012/11/12 v1.1 Defining Unicode characters
 )
 
-Package newunicodechar Warning: Redefining Unicode character on input line 16.
+Package newunicodechar Warning: Redefining Unicode character on input line 17.
 
 (./recital2020.sty
 Package `jeptaln2020' <09 octobre 2020>.
@@ -1097,6 +1105,7 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -1157,47 +1166,47 @@ Package babel Info: Making ? an active character on input line 414.
 (./recital2020.aux)
 \openout1 = `recital2020.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 46.
-LaTeX Font Info:    Try loading font information for OML+jkp on input line 46.
+LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 48.
+LaTeX Font Info:    Try loading font information for OML+jkp on input line 48.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omljkp.fd
 File: omljkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 46.
-LaTeX Font Info:    Try loading font information for OMS+jkp on input line 46.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 48.
+LaTeX Font Info:    Try loading font information for OMS+jkp on input line 48.
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 46.
-LaTeX Font Info:    Try loading font information for OMX+jkp on input line 46.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 48.
+LaTeX Font Info:    Try loading font information for OMX+jkp on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omxjkp.fd
 File: omxjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 46.
-LaTeX Font Info:    Try loading font information for U+jkpexa on input line 46.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 48.
+LaTeX Font Info:    Try loading font information for U+jkpexa on input line 48.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 46.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Try loading font information for T1+jkp on input line 46.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Try loading font information for T1+jkp on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkp.fd
 File: t1jkp.fd 2007/01/24 Fontinst v1.928 font definitions for T1/jkp.
@@ -1233,7 +1242,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 46.
+Package hyperref Info: Link coloring ON on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1243,9 +1252,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
 
 (./recital2020.out) (./recital2020.out)
 \@outlinefile=\write4
@@ -1286,7 +1295,7 @@ LaTeX Info: Redefining \nameref on input line 46.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 46.
+LaTeX Info: Redefining \microtypecontext on input line 48.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1301,10 +1310,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkp' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Info: Redefining \degres on input line 46.
-LaTeX Info: Redefining \dots on input line 46.
-LaTeX Info: Redefining \up on input line 46.
-LaTeX Font Info:    Try loading font information for T1+jkptt on input line 47.
+LaTeX Info: Redefining \degres on input line 48.
+LaTeX Info: Redefining \dots on input line 48.
+LaTeX Info: Redefining \up on input line 48.
+LaTeX Font Info:    Try loading font information for T1+jkptt on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkptt.fd
 File: t1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for T1/jkptt.
@@ -1317,11 +1326,11 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkp/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+jkp on input line 84.
+LaTeX Font Info:    Try loading font information for OT1+jkp on input line 80.
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkp.fd
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 )
@@ -1329,25 +1338,25 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkp' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for U+jkpmia on input line 84.
+LaTeX Font Info:    Try loading font information for U+jkpmia on input line 80.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpmia.fd
 File: ujkpmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsya on input line 84.
+LaTeX Font Info:    Try loading font information for U+jkpsya on input line 80.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsyb on input line 84.
+LaTeX Font Info:    Try loading font information for U+jkpsyb on input line 80.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyb.fd
 File: ujkpsyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 84.
+LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 80.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
@@ -1362,10 +1371,10 @@ Package microtype Info: Character `029' is missing
 File: pascal_15_img_transcription.png Graphic file (type png)
 <use pascal_15_img_transcription.png>
 Package pdftex.def Info: pascal_15_img_transcription.png  used on input line 19
-1.
+4.
 (pdftex.def)             Requested size: 241.90315pt x 203.25887pt.
  [4] [5 <./pascal_15_img_transcription.png>]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 251.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 254.
 
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1374,7 +1383,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for TS1+jkp on input line 262.
+LaTeX Font Info:    Try loading font information for TS1+jkp on input line 265.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
@@ -1387,33 +1396,34 @@ Package microtype Info: Loading generic protrusion settings for font family
 \openout3 = `recital2020-1.cpt'.
 
 
-(./recital2020-1.cpt) (./recital2020-1.cpt) [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (10.81935pt too wide) in paragraph at lines 263--287
+[][] 
+ []
 
- [7]
-[8]
+(./recital2020-1.cpt) (./recital2020-1.cpt) [6] [7] [8] [9]
 \openout3 = `recital2020-2.cpt'.
 
- (./recital2020-2.cpt) (./recital2020-2.cpt) [9] [10] [11]
-(./recital2020.bbl [12] [13])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 660.
+ [10]
+(./recital2020-2.cpt) [11] [12] (./recital2020.bbl [13])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 640.
  [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 660.
- (./recital2020.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 660.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 660.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 640.
+
+(./recital2020.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 640.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 640.
 Package rerunfilecheck Info: File `recital2020.out' has not changed.
 (rerunfilecheck)             Checksum: 6DDA10BD94F576A5E6900DAC0CD3938B;1229.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 660.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 640.
  ) 
 Here is how much of TeX's memory you used:
  12915 strings out of 492982
- 184691 string characters out of 6134897
- 367142 words of memory out of 5000000
- 15698 multiletter control sequences out of 15000+600000
- 196824 words of font info for 440 fonts, out of 8000000 for 9000
+ 184898 string characters out of 6134897
+ 326288 words of memory out of 5000000
+ 15704 multiletter control sequences out of 15000+600000
+ 195868 words of font info for 433 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,47p,740b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,47p,410b,659s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texlive/texmf-dis
 t/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kp
 fonts/kpfonts-expert.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/euro
@@ -1428,10 +1438,10 @@ kpfonts/jkpmsc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/
 jkpsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmr8.pfb>
-Output written on recital2020.pdf (14 pages, 421128 bytes).
+Output written on recital2020.pdf (14 pages, 418218 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 79 named destinations out of 1000 (max. 500000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
+ 80 named destinations out of 1000 (max. 500000)
  65150 words of extra memory for PDF output out of 74296 (max. 10000000)
 
