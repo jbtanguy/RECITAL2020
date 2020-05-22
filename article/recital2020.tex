@@ -65,7 +65,7 @@ logiciels d'OCR pour des documents français du XVII\ieme~siècle}
   documents and therefore allows to choose the most suitable OCR software. However, these ground truths are extremely 
   expensive and may slow down some studies. Hence, we are exploring the exploitation of language models by the agregation 
   (with several methods) of their probabilities in order to estimate OCR output qualities. The Pearson correlation is used 
-  to understand how these language models based estimations covary with the \textit{CER}, reference metric.\\
+  to understand how these language model based estimations covary with the \textit{CER}, reference metric.\\
 }
 
 \motsClefs
@@ -83,9 +83,9 @@ Au-delà de la construction d'éditions web, la numérisation de telles collecti
 savante que pour le grand public. Toutefois, deux problèmes majeurs se posent. D'une part, les logiciels 
 de reconnaissance optique de caractères (ou OCR), s'ils offrent des transcriptions automatiques de qualité pour des 
 documents contemporains générés électroniquement, sont nettement moins robustes face à des documents historiques. 
-\cite{Lejeune2019a}, pour le "corpus" des Mazarinades,
+\cite{Lejeune2019a}, pour le « corpus » des Mazarinades,
 exposent un ensemble d'éléments rendant l'étude de ces documents historiques particulièrement complexe : variantes graphiques,
-abréviations, orthographe erratique mais aussi un "état inégal de conservation [des] imprimés souvent produits dans l’urgence et l’économie de moyens (papier et encre de mauvaise qualité, notamment)". D'autre part, et s'agissant de
+abréviations, orthographe erratique mais aussi un « état inégal de conservation [des] imprimés souvent produits dans l’urgence et l’économie de moyens (papier et encre de mauvaise qualité, notamment) ». D'autre part, et s'agissant de
 processus automatisés, la connaissance de la qualité des sorties des logiciels d'OCR est primordiale. Néanmoins, l'évaluation
 d'outils d'OCR n'est pas stable d'un corpus à l'autre, car elle fait intervenir des corpus particulièrement hétérogènes
 \cite{Springmann2014a}. Mesurer la qualité d'une sortie d'OCR nécessite alors, au moins pour un ensemble réduit de la 
@@ -125,8 +125,8 @@ calculées grâce à des vérités de terrain, pour valider ou réfuter leur per
     des logiciels d'OCR. Ceux-ci renvoient en effet une valeur correspondant à l'intensité de la confiance que le
     logiciel associe au caractère qu'il propose. Dans le cas d'une hésitation entre deux caractères
     proches (par exemple, \textit{G} et \textit{O}), le conflit est traduit par deux valeurs de confiance similaires et plus
-    faibles que dans le cas d'une certitude pour un caractère en particulier. Les auteurs supposent que "la somme des 
-    valeurs de confiance associées aux caractères de sortie doit ainsi être corrélée avec la précision de la sortie d'OCR"
+    faibles que dans le cas d'une certitude pour un caractère en particulier. Les auteurs supposent que « la somme des 
+    valeurs de confiance associées aux caractères de sortie doit ainsi être corrélée avec la précision de la sortie d'OCR »
     \footnote{\textit{The sum of the confidences over all output characters should therefore correlate with the accuracy of the output.}} et le vérifient très nettement.
 
     \paragraph{Exploiter les \textit{bounding boxes}}
@@ -382,7 +382,7 @@ les modèles de langue appris et les mesures d'évaluation à comparer au \texti
 	    Les estimateurs de qualité d'océrisation des pages sont donc calculés comme la moyenne des agrégations des probabilités
 	    calculées à l'échelle du mot\footnote{La tokenisation est réalisée par une simple segmentation par l'espace des chaînes de caractères.}.
 
-	    Notons que réaliser une \textit{moyenne} constitue un bais important. Les données textuelles issues d'OCR n'ont pas une qualité homogène
+	    Notons que réaliser une \textit{moyenne} constitue un biais important. Les données textuelles issues d'OCR n'ont pas une qualité homogène
 	    pour une même \oe{}uvre ou une même page ; la moyenne efface ces disparités pourtant essentielles à soulever. D'autre
 	    part, certains mots comportent trop peu de caractères pour que le modèle de langue puisse leur calculer une probabilité. Certains passages sont 
 	    ignorés et la moyenne ne le traduit pas. 
