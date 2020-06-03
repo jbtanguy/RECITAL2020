@@ -1,0 +1,97 @@
+- correction des coquilles : 
+	- p1 : résumé en anglais 
+		"the CER calculate" -> "the CER calculates"
+		"the more suitable" -> "the most suitable"
+		"these ground truth" -> "these ground truths"
+		"OCR Software Outputs Qualities -> "OCR Software Output Qualities"
+		"to estimate OCR outputs qualities" -> "to estimate OCR output qualities"
+		"these language models based" -> "these language model based"
+	- p2 :la note sur les Mazarinades doit se trouver au niveau de la première occurrence du terme
+	- p4 : "du manque transcriptions" -> "du manque de transcriptions"
+	- p5 : "océrisaion" -> "océrisation"
+	- tableau -> table
+	- guillemets anglais vers guillemets français
+
+Section 2 :
+	- paragraphe "Exploiter les modèles de langue" : les modèles de langue n'ont, dans la limite de nos connaissances, pas encore
+	été utilisés pour évaluer des sorties d'OCR
+
+Section 3 :
+	Sous-section 2 : 
+		- paragraphe "Application des modèles" : clarification des résultats des modèles d'OCR sur l'exemple. Les lignes présentées sont le résultat des modèles d'OCR
+		intervenant dans l'étude et les CER ont été calculés sur la référence présentée en Figure 1.
+	Sous-section 3 :
+		- Modèles de langue : justification du choix des trois types de modèles de langue
+			- modèles à probabilités conditionnelles : simple à apprendre, ils constituent ici une baseline
+			- modèles LSTM et biLSTM :
+				- modèles à comparer aux modèles baseline
+				- choisis car ce sont des réseaux de neurones
+				- représentant des réseaux de neurones récurrents 
+				- LSTM et biLSTM pour observer l'influence d'une couche bidirectionnelle
+				- précision sur le nombre d'époques : 100
+		- Métrique d'estimation : explicitation du choix des métriques 
+Section 4 :
+	Sous-section 2 : 
+		Précision sur la p-value : il s'agit du test de corrélation face à l'hypothèse nulle. 
+		Dans la première version, les valeurs inférieures à 0,05 étaient mises en gras (elles correspondent à une forte présomption contre l'hypothèse nulle)
+		Puisque peu de valeurs sont concernées, nous choisissons ici de mettre en lumière les valeurs inférieures à 0,1 pour en augmenter le nombre
+		(toutefois, entre 0,05 et 0,1, la p-value indique une faible présomption contre l'hypothèse nulle)
+		Les valeurs mises en lumières le sont en étant en bleu et en gras. 
+
+
+
+----------------------- REVIEW 1 ---------------------
+SUBMISSION: 179
+TITLE: Exploiter des modèles de langue pour évaluer des sorties de logiciels d’OCR pour des documents français du XVIIe siècle
+AUTHORS: Jean-Baptiste Tanguy
+
+----------- Overall evaluation -----------
+SCORE: 2 (accept)
+----- TEXT:
+Cet article s’inscrit dans le contexte de la numérisation des bibliothèques historiques, qui nécessite des outils d’OCR de qualité. Pour parer à leur évaluation coûteuse, les auteurs proposent de déterminer si l’utilisation de modèles de langue, ne nécessitant pas d’intervention manuelle, permettrait d’évaluer les sorties de logiciels d’OCR sur des textes du XVIIe siècle. Le contexte, sa problématique et l’objectif de l’article sont correctement présentés et reliés entre eux pour permettre au lecteur de comprendre rapidement la motivation de cette étude.
+
+Il y a bien un état de l’art sur les méthodes non supervisées pour évaluer les sorties des logiciels d’OCR. Il est tout de même dommage que seul le paragraphe consacré aux modèles de langue, la technique choisie par les auteurs, soit quelque peu hors-sujet parce que traitant de la reconnaissance de la parole et non de l’OCR. Il faut y évoquer l’OCR, même si c’est pour dire que rien n’a été fait par le passé. L’approche de l’article est tout de même bien mise en perspective par rapport à cet état de l’art.
+
+Le cadre expérimental est précisément décrit, avec un regard critique sur certains choix effectués. Il aurait tout de même été intéressant que le choix des types de modèles de langue, centraux dans cette étude, soit expliqué, voire contextualisé avec un état de l’art un peu plus détaillé sur le sujet. Il en est de même pour le choix des métriques d’estimation.
+
+Les expériences sont complètes, suivant des paramètres qui ont été correctement expliqués. Leurs résultats, tout aussi nombreux, pourraient bénéficier d’une mise en forme plus aérée et contrastive. Il est appréciable que les auteurs aient approfondi les résultats. La critique sur la qualité des modèles de langue créés est à la fois correcte et pertinente.
+
+Au regard des résultats obtenus, la conclusion n’en est pas vraiment une mais constitue plutôt un appel intéressant à poursuivre les recherches dans cette voie, l’article ayant tout de même permis de mettre en exergue l’importance de la quantité des données pour la qualité des modèles de langue.
+
+
+
+----------------------- REVIEW 2 ---------------------
+SUBMISSION: 179
+TITLE: Exploiter des modèles de langue pour évaluer des sorties de logiciels d’OCR pour des documents français du XVIIe siècle
+AUTHORS: Jean-Baptiste Tanguy
+
+----------- Overall evaluation -----------
+SCORE: -1 (weak reject)
+----- TEXT:
+Cet article présente une étude sur l'utilisation des modèles de langue pour évaluer la qualités des sorties de logiciels de reconnaissance optique de caractères (OCR) pour des documents français du XVIIe siècle, afin de remplacer les actuelles évaluations basées sur le Character Error Rate (CER) et donc sur des vérités de terrains de qualité couteuses à obtenir.
+Après avoir longuement justifier les besoins d'une telle étude, les différents moyens d'évaluation de la qualité sont listés avant d'en venir au cadre expérimental lui-même. Enfin, les métriques d'estimation (ou plutôt d'évaluation) sont décrites avant de présenter les résultats et de conclure.
+
+Je regrette que les modèles de langues soient si peu explicités. Je me suis demandées s'ils étaient disponibles avant de trouver ma réponse dans la dernière ligne de la conclusion. Enfin, bien que le corpus soit découpé en 2 sous-corpus, l'un pour l'apprentissage et l'autre pour l'océrisation et l'évaluation, rien n'est dit sur le nombre d'"epoch", par exemple... Un seul paragraphe pour les 3 modèles semble trop juste, surtout que dans la conclusion la qualité de ces modèles est remise en cause, mais on ne comprend pas pourquoi c'est la qualité qui est remise en cause, puisqu'on ne sait pas comment et sur quoi ils ont été entraînés, testés et finalement évalués...
+
+Je regrette également de ne pas avoir plus d'explication sur les métriques d'estimation en 3.4. Elles sont simplement indiquées sans expliciter ce qu'elles apportent les unes par rapport aux autres.
+
+Dans la section 3.2, les résultats des CER varient selon les systèmes alors que les lignes sont identiques (du moins elles semblent l'être). Une explication serait la bienvenue.
+
+Dans la section 4.2, la notion de chance dans la corrélation de Pearson n'est pas indiquée. Cette corrélation prend en compte le fait qu'un résultat puisse être donné correctement par pure chance.
+
+Différentes coquille à corriger :
+abstract en anglais
+"OCR Software Outputs Qualities@ -> "OCR Software Output Qualities"
+"to estimate OCR outputs qualities" -> "to estimate OCR output qualities"
+"these language models based" -> "these language model based"
+Introduction
+la note sur les Mazarinades doit se trouver au niveau de la première occurrence du terme
+p4
+"du manque transcriptions" -> "du manque de transcriptions"
+3.2
+"océrisaion" -> "océrisation"
+
+Dans tout le texte, se référer aux tables sous le terme de "table" et non de tableau, ou dans tous les cas, uniformiser les titres et les références dans le texte.
+Les tables de certaines sections (3.3) se trouvent dans d'autres sections (3.1), très perturbant de suivre le flux de lecture.
+
+C'est pour toutes ces raisons que je ne pense pas que cet article doivent être publié.

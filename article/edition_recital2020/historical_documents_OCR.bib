@@ -1,0 +1,455 @@
+% Encoding: UTF-8
+
+@String{apr         = {\ifFABR avril \else April\fi}}
+@String{aug         = {\ifFABR ao{\^u}t \else August\fi}}
+@String{brazil      = {\ifFABR Brésil\else Brazil\fi}}
+@String{feb         = {\ifFABR février \else February\fi}}
+@String{greece      = {\ifFABR Grèce\else Greece\fi}}
+@String{jan         = {\ifFABR janvier \else January\fi}}
+@String{japan       = {\ifFABR Japon\else Japan\fi}}
+@String{jul         = {\ifFABR juillet \else July\fi}}
+@String{jun         = {\ifFABR juin \else June\fi}}
+@String{may         = {\ifFABR mai \else May\fi}}
+@String{netherlands = {\ifFABR Pays-Bas\else The Netherlands\fi}}
+@String{oct         = {\ifFABR octobre \else October\fi}}
+@String{pro_of      = {\ifFABR Actes de \else Proceedings of the \fi}}
+@String{sep         = {\ifFABR septembre \else September\fi}}
+@String{spain       = {\ifFABR Espagne\else Spain\fi}}
+@String{usa         = {\ifFABR États-Unis\else USA\fi}}
+
+@InProceedings{BergKirkpatrick2014a,
+  author    = {Berg-Kirkpatrick, Taylor and Klein, Dan},
+  booktitle = pro_of #{ 52nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  title     = {{Improved Typesetting Models for Historical OCR}},
+  year      = {2014},
+  address   = {Baltimore, Maryland, } # usa,
+  editor    = {Toutanova, Kristina and Wu, Hua},
+  month     = jun,
+  pages     = {118--123},
+  publisher = {Association for Computational Linguistics},
+  volume    = {2},
+  abstract  = {We present richer typesetting models that extend the unsupervised historical document recognition system of BergKirkpatrick et al. (2013). The first model breaks the independence assumption between vertical offsets of neighboring glyphs and, in experiments, substantially decreases transcription error rates. The second model simultaneously learns multiple font styles and, as a result, is able to accurately track italic and nonitalic portions of documents. Richer models complicate inference so we present a new, streamlined procedure that is over 25x faster than the method used by BergKirkpatrick et al. (2013). Our final system achieves a relative word error reduction of 22% compared to state-of-the-art results on a dataset of historical newspapers.},
+  file      = {:BergKirkpatrick2014a.pdf:PDF},
+  note       = {Anthologie ACL~: \href{https://aclweb.org/anthology/P14-2020}{P14-2020}},
+}
+
+@PhdThesis{Bermes2020a,
+  author = {Bermes, Emmanuelle},
+  school = {Paris, Ecole nationale des chartes},
+  title  = {Le num{\'e}rique en biblioth{\`e}que: naissance d'un patrimoine: l'exemple de la Biblioth{\`e}que nationale de France (1997-2019)},
+  year   = {2020},
+  file   = {:Bermes2020a.pdf:PDF},
+  url    = {https://tel.archives-ouvertes.fr/tel-02475991/document},
+}
+
+@misc{Springmann2018a,
+  author   = {Springmann, Uwe and Reul, Christian and Dipper, Stefanie and Baiter, Johannes},
+  title    = {{Ground Truth for training OCR engines on historical documents in German Fraktur and Early Modern Latin}},
+  year     = {2018},
+  abstract = {In this paper we describe a dataset of German and Latin ground truth (GT) for historical OCR in the form of printed text line images paired with their transcription. This
+dataset, called GT4HistOCR, consists of 313,173 line pairs covering a wide period of
+printing dates ಎom incunabula ಎom the 15th century to 19th century books printed
+in Fraktur types and is openly available under a CC-BY ⒋0 license. The special form
+of GT as line image/transcription pairs makes it directly usable to train state-of-the-art
+recognition models for OCR soಏware employing recurring neural networks in LSTM
+architecture such as Tesseract 4 or OCRopus. We also provide some pretrained OCRopus models for subcorpora of our dataset yielding between 95% (early printings) and
+98% (19th century Fraktur printings) character accuracy rates on unseen test cases, a
+Perl script to harmonize GT produced with different transcription guidelines, and give
+hints on how to construct GT for OCR purposes which has requirements that may
+differ ಎom linguistically motivated transcriptions.},
+  file     = {:Springmann2018a.pdf:PDF},
+  note      = {arXiv preprint~: \href{https://arxiv.org/abs/1809.05501}{1809.05501}},
+}
+
+@misc{Gabay2019a,
+  author   = {Gabay, Simon},
+  journal  = {ACM/IEEE Joint Conference on Digital Libraries 2018 (JCDL 2018)},
+  title    = {{OCRising 17th French prints}},
+  year     = {2019},
+  publisher   = {e-ditiones},
+  howpublished = {\url{https://editiones.hypotheses.org/1958}}
+}
+
+@InProceedings{Breuel2013a,
+  author       = {Breuel, Thomas M and Ul-Hasan, Adnan and Al-Azawi, Mayce Ali and Shafait, Faisal},
+  booktitle    = pro_of #{ 12th International Conference on Document Analysis and Recognition},
+  title        = {{High-performance OCR for printed English and Fraktur using LSTM networks}},
+  year         = {2013},
+  address      = {Washington, DC, } # usa,
+  month        = aug,
+  organization = {IEEE},
+  pages        = {683--687},
+  publisher    = {IEEE Computer Society},
+  series       = {ICDAR'13},
+  abstract     = {Long Short-Term Memory (LSTM) networks have
+yielded excellent results on handwriting recognition. This paper
+describes an application of bidirectional LSTM networks to the
+problem of machine-printed Latin and Fraktur recognition. Latin
+and Fraktur recognition differs significantly from handwriting
+recognition in both the statistical properties of the data, as well
+as in the required, much higher levels of accuracy. Applications of
+LSTM networks to handwriting recognition use two-dimensional
+recurrent networks, since the exact position and baseline of
+handwritten characters is variable. In contrast, for printed OCR,
+we used a one-dimensional recurrent network combined with
+a novel algorithm for baseline and x-height normalization. A
+number of databases were used for training and testing, including
+the UW3 database, artificially generated and degraded Fraktur
+text and scanned pages from a book digitization project. The
+LSTM architecture achieved 0.6% character-level test-set error
+on English text. When the artificially degraded Fraktur data
+set is divided into training and test sets, the system achieves
+an error rate of 1.64%. On specific books printed in Fraktur
+(not part of the training set), the system achieves error rates of
+0.15% (Fontane) and 1.47% (Ersch-Gruber). These recognition
+accuracies were found without using any language modelling or
+any other post-processing techniques.},
+  file         = {:Breuel2013a.pdf:PDF},
+  url          = {https://s3.amazonaws.com/academia.edu.documents/31806084/2013-breuel-high-performance-ocr-for-english-and-fraktur-using-lstm-networks.pdf?response-content-disposition=inline; filename=High_Performance_OCR_for_English_and_Fra.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATUSBJ6BAEYGK5R5L/20200327/us-east-1/s3/aws4_request&X-Amz-Date=20200327T073829Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKb//////////wEaCXVzLWVhc3QtMSJHMEUCIGA5uE8+r4M1LWoHB6CxSfhDxLPsH8SB5cFqnPe636wmAiEAix2yfxlHvvfe9L9OyjaUDetBA9VrYOWKaysw8pTMlEUqvQMInv//////////ARAAGgwyNTAzMTg4MTEyMDAiDCd61LjjOIof7wBMECqRA3vRADk+TrecO3RSF/13IM6pw8bVbOTL75dAzbaj0Gj/Mlk5YTsn3ty+f0NT3jLpjYEiOyEX6jrLS6l6mtbtKDOJTft18YQ2odgzj1S5gVmKpZXsUuiKAhogfmTVZTV/Jn3KcWTZ3Ha+kD1lZiH3guSO2Sy0AS9i8QQRyETkZJ9+CILgwmPv+uIvmR0CBRRtf/e9g/teuWZL7eZY7NWui2azz8UfPSEOOzabHHc8EivuPbF9btX13c5EHHHksSVPy67UHE93VmXC8FfzUqaFNnXcy2iUUzUXG6B9q9jufg21wxwyjkXFF9nlW38GpHj27EPXociLJRm+oyaE3xSilVhnLleYMN3W/VVTPwlgJkarD0q9fg6o4BIJECGnEPxHlQ1BXy+XEcnCOJcs/Tr70SejgEu9GDmf8NsT2v02J7NhsYw1HfKc7jEKJbOnEMSCgFFq80U0K3kmio75gugCfgfzDd6vH7liZtrrSK3THubdeQo5bY6CQNVN5eVk2X5USovtC3R364fZzv3qwKR8IGAHMI6W9vMFOusBoFxqrahEjVxPJBty8+hEWouYrKr6meI8NeS9ASuldhXmSUbjQTKEm2N8w7RopNb/E0cCsZucxfX/sigaAu7HM9YHV6RL187enkOjG/4st1rHC95Rs8nII0Qq9sz5HT+Y4+OmwL2NzMdG603/6UXmXRVt28SHz0HgKjU5oa0MzcKSC9we7FAS1XNRNuiOwuKipIyqoK5VEWzeWYgmHI8sKUWsDW2o12NAaP/QZ40C3CEzO682resLC771u9ZVDdkn9fFafsK2nv9GNGxzHB/L5u5I6srHfRWT4eY+Bs6fjVhpxwGi7fkNti44CQ==&X-Amz-SignedHeaders=host&X-Amz-Signature=e859b55abde52cacdcc93ee7e7d177d2d1ec98286884fd9b235c2cf98e56d772},
+}
+
+@InProceedings{Chen1998a,
+  author    = {Chen, Stanley F and Beeferman, Douglas and Rosenfeld, Roni},
+  booktitle = pro_of #{ DARPA Broadcast News Transcription and Understanding Workshop},
+  title     = {Evaluation metrics for language models},
+  year      = {1998},
+  address   = {Lansdowne, Virginia, } # usa,
+  month     = feb,
+  pages     = {275--280},
+  publisher = {Carnegie Mellon University},
+  abstract  = {The most widely-used evaluation metric for language models for
+speech recognition is the perplexity of test data. While perplex-
+ities can be calculated efficiently and without access to a speech
+recognizer, they often do not correlate well with speech recognition
+word-error rates. In this research, we attempt to find a measure that
+like perplexity is easily calculated but which better predicts speech
+recognition performance.
+We investigate two approaches; first, we attempt to extend perplex-
+ity by using similar measures that utilize information about language
+models that perplexity ignores. Second, we attempt to imitate the
+word-error calculation without using a speech recognizer by artifi-
+cially generating speech recognition lattices. To test our new metrics,
+we have built over thirty varied language models. We find that per-
+plexity correlates with word-error rate remarkably well when only
+considering  -gram models trained on in-domain data. When con-
+sidering other types of models, our novel metrics are superior to
+perplexity for predicting speech recognition performance. How-
+ever, we conclude that none of these measures predict word-error
+rate sufficiently accurately to be effective tools for language model
+evaluation in speech recognition.},
+  file      = {:Chen1998a.pdf:PDF},
+}
+
+@InProceedings{Gupta2015a,
+  author    = {Gupta, Anshul and Gutierrez-Osuna, Ricardo and Christy, Matthew and Capitanu, Boris and Auvil, Loretta and Grumbach, Liz and Furuta, Richard and Mandell, Laura},
+  booktitle = pro_of #{ Twenty-Ninth AAAI Conference on Artificial Intelligence},
+  title     = {{Automatic assessment of OCR quality in historical documents}},
+  year      = {2015},
+  address   = {Austin, Texas, } # usa,
+  month     = jan,
+  pages     = {1735--1741},
+  abstract  = {Mass digitization of historical documents is a challenging
+problem for optical character recognition (OCR) tools.
+Issues include noisy backgrounds and faded text due to
+aging, border/marginal noise, bleed-through, skewing,
+warping, as well as irregular fonts and page layouts. As a
+result, OCR tools often produce a large number of spurious
+bounding boxes (BBs) in addition to those that correspond
+to words in the document. This paper presents an iterative
+classification algorithm to automatically label BBs (i.e., as
+text or noise) based on their spatial distribution and
+geometry. The approach uses a rule-base classifier to
+generate initial text/noise labels for each BB, followed by
+an iterative classifier that refines the initial labels by
+incorporating local information to each BB, its spatial
+location, shape and size. When evaluated on a dataset
+containing over 72,000 manually-labeled BBs from 159
+historical documents, the algorithm can classify BBs with
+0.95 precision and 0.96 recall. Further evaluation on a
+collection of 6,775 documents with ground-truth
+transcriptions shows that the algorithm can also be used to
+predict document quality (0.7 correlation) and improve
+OCR transcriptions in 85% of the cases.},
+  file      = {:Gupta2015a.pdf:PDF},
+}
+
+@Article{Lejeune2019a,
+  author   = {Lejeune, Ga{\"e}l and Abiven, Karine},
+  journal  = {Information Retrieval, Document and Semantic Web},
+  title    = {Analyse automatique de documents anciens: tirer parti d’un corpus incomplet, h{\'e}t{\'e}rog{\`e}ne et bruit{\'e}},
+  year     = {2019},
+  month    = feb,
+  number   = {1},
+  volume   = {19},
+  abstract = {Cet article concerne un ensemble de textes anciens (datant du milieu du 17 e siècle), que les spécialistes d’histoire et
+de littérature ont l’habitude de nommer "corpus des mazarinades". Ces quelque 5500 textes offrent une variété de problématiques qui
+s’inscrivent pleinement dans le domaine des humanités numériques. Nous montrons en premier lieu qu’il ne s’agit pas à proprement
+parler d’un corpus puisqu’on ne dispose pas, malgré un important travail bibliographique sur le sujet, d’une définition ni d’un recensement
+rigoureux de cet ensemble. Il s’agit ensuite de voir l’impact de cette définition instable sur le travail des chercheurs qui s’intéressent à
+ce "corpus", tout en proposant de corriger ces biais grâce à un outillage automatique. Nous montrons que, si le but est d’exploiter le
+matériau textuel et non de l’interpréter, il est intéressant de s’autoriser à traiter des données brutes (avec un minimum de traitements
+préparatoires). Enfin, nous exposons un premier cadre d’application sur la sous-partie de cet ensemble actuellement disponible sous
+forme numérique : la datation de documents. La méthode utilisée se fonde sur une analyse en chaînes de caractères qui permet à la
+fois de fonctionner sur un corpus partiellement bruité (états de langue divers, scories de l’océrisation. . .) et sur un corpus hétérogène,
+comprenant des documents de tailles et surtout de genres très variés. Nous montrons que, dans certains cas, le bruitage du corpus
+peut être un avantage pour certaines tâches de classification, notamment grâce à l’utilisation de méthodes exploitant des chaînes de
+caractères. Les approches en caractères permettent en effet de surmonter un certain nombre de difficultés liées à la variété des données
+disponibles. Aussi ce travail donne-t-il des outils pour extraire des sous-corpus cohérents, pour exploiter des jeux de données issus de
+la numérisation en économisant le post-traitement, et pour identifier des métadonnées manquantes : trois enjeux essentiels pour ce
+"corpus" qui reste encore pour une bonne part à divulguer à la communauté dans un format numérique raisonné.},
+  file     = {:Lejeune2019a.pdf:PDF},
+}
+
+@InProceedings{Smith2007a,
+  author    = {Smith, Ray},
+  booktitle = pro_of #{ Ninth International Conference on Document Analysis and Recognition (ICDAR 2007)},
+  title     = {{An overview of the Tesseract OCR engine}},
+  year      = {2007},
+  address   = {Parana, } # brazil,
+  month     = sep,
+  pages     = {629--633},
+  publisher = {IEEE},
+  volume    = {2},
+  abstract  = {The Tesseract OCR engine, as was the HP Research
+Prototype in the UNLV Fourth Annual Test of OCR
+Accuracy[1], is described in a comprehensive
+overview. Emphasis is placed on aspects that are novel
+or at least unusual in an OCR engine, including in
+particular the line finding, features/classification
+methods, and the adaptive classifier.},
+  file      = {:Smith2007a.pdf:PDF},
+  url       = {https://storage.googleapis.com/pub-tools-public-publication-data/pdf/33418.pdf},
+}
+
+@InProceedings{Kiessling2019a,
+  author    = {Kiessling, Benjamin},
+  booktitle = pro_of #{ Digital Humanities Conference 2019 - DH2019},
+  title     = {Kraken-an universal text recognizer for the humanities},
+  year      = {2019},
+  address   = {Utrecht, } # netherlands,
+  editor    = {ADHO},
+  month     = jul,
+  journal   = {Proceedings of the DH},
+}
+
+@misc{Springmann2016a,
+  author   = {Springmann, Uwe and Fink, Florian and Schulz, Klaus U},
+  title    = {{Automatic quality evaluation and (semi-) automatic improvement of OCR models for historical printings}},
+  year     = {2016},
+  month    = oct,
+  abstract = {Good OCR results for historical printings rely on
+the availability of recognition models trained on diplomatic
+transcriptions as ground truth, which is both a scarce resource
+and time-consuming to generate. Instead of having to train
+a separate model for each historical typeface, we propose a
+strategy to start from models trained on a combined set of
+available transcriptions from 6 printings ranging from 1471
+to 1686 in a variety of fonts. These mixed models result in
+character accuracy rates (defined as the ratio of correctly rec-
+ognized characters to the total number of characters in the
+OCR output) over 90% on a test set of another 6 printings
+from the same period of time, but without any representation
+in the training data, demonstrating the possibility to over-
+come the typography barrier by generalizing from a few type-
+faces to a larger set of (similar) fonts in use over a period of
+time. The output of these mixed models is then used as a base-
+line to be further improved by both fully automatic methods
+(taking the OCR result of mixed models as pseudo ground
+truth for subsequent training) and semi-automatic methods
+involving a minimal amount of manual transcriptions.
+In order to evaluate the recognition quality of each model
+in a series of models generated during the training process
+in the absence of any ground truth, we introduce two readily
+observable quantities that correlate well with true accuracy,
+giving us an ordinal ranking scale which allows to automat-
+ically select the (nearly) best performing model for recogni-
+tion. These quantities are mean character confidence C (as
+given by the OCR engine OCRopus) and mean token lexi-
+cality L (a distance measure of OCR tokens from modern
+wordforms taking historical spelling patterns into account,
+which can be calculated for any OCR engine). Whereas the
+fully automatic method is able to improve upon the result of
+a mixed model by only 1-2 percentage points, already 100-
+200 hand-corrected lines lead to much better OCR results
+with character error rates of only a few percent. This proce-
+dure minimizes the amount of ground truth production and
+does not depend on the previous construction of a specific
+typographic model.},
+  file     = {:Springmann2016a.pdf:PDF},
+  keywords = {document and text processing · optical character recognition (OCR) · historical documents · recurrent neural networks},
+  note      = {arXiv preprint~: \href{https://arxiv.org/abs/1606.05157}{1606.05157}},
+}
+
+@misc{Springmann2016b,
+  author   = {Springmann, Uwe and L{\"u}deling, Anke},
+  title    = {{OCR of historical printings with an application to building diachronic corpora: A case study using the RIDGES herbal corpus}},
+  year     = {2016},
+  month    = oct,
+  abstract = {This article describes the results of a case study that applies Neural Network-
+based Optical Character Recognition (OCR) to scanned images of books printed
+between 1487 and 1870 by training the OCR engine OCRopus (Breuel et al. 2013)
+on the RIDGES herbal text corpus (Odebrecht et al. 2017, in press). Training
+specific OCR models was possible because the necessary ground truth is available as
+error-corrected diplomatic transcriptions. The OCR results have been evaluated for
+accuracy against the ground truth of unseen test sets. Character and word accura-
+cies (percentage of correctly recognized items) for the resulting machine-readable
+texts of individual documents range from 94% to more than 99% (character level)
+and from 76% to 97% (word level). This includes the earliest printed books, which
+were thought to be inaccessible by OCR methods until recently. Furthermore, OCR
+models trained on one part of the corpus consisting of books with different print-
+ing dates and different typesets (mixed models) have been tested for their predictive
+power on the books from the other part containing yet other fonts, mostly yield-
+ing character accuracies well above 90%. It therefore seems possible to construct
+generalized models trained on a range of fonts that can be applied to a wide variety
+of historical printings still giving good results. A moderate postcorrection effort
+of some pages will then enable the training of individual models with even better
+accuracies. Using this method, diachronic corpora including early printings can be
+constructed much faster and cheaper than by manual transcription. The OCR meth-
+ods reported here open up the possibility of transforming our printed textual cultural
+heritage into electronic text by largely automatic means, which is a prerequisite for
+the mass conversion of scanned books.},
+  file     = {:Springmann2016b.pdf:PDF},
+  note      = {arXiv preprint~: \href{https://arxiv.org/abs/1608.02153}{1608.02153}},
+}
+
+@InProceedings{Springmann2014a,
+  author    = {Springmann, Uwe and Najock, Dietmar and Morgenroth, Hermann and Schmid, Helmut and Gotscharek, Annette and Fink, Florian},
+  booktitle = pro_of #{ First International Conference on Digital Access to Textual Cultural Heritage (DATeCH'14)},
+  title     = {{OCR of historical printings of Latin texts: problems, prospects, progress}},
+  year      = {2014},
+  address   = {New York, NY, } # usa,
+  month     = may,
+  pages     = {71--75},
+  publisher = {Association for Computing Machinery},
+  abstract  = {This paper deals with the application of OCR methods to
+historical printings of Latin texts. Whereas the problem of
+recognizing historical printings of modern languages has been
+the subject of the IMPACT program 1 , Latin has not yet been
+given any serious consideration despite the fact that it domi-
+nated literature production in Europe up to the 17th century.
+Using finite state tools and methods developed during the
+IMPACT program we show that efficent batch-oriented post-
+correction can work for Latin as well, and that a lexicon of
+historical Latin spelling variants can be constructed to aid
+in the correction phase. Initial experiments for the OCR
+engines Tesseract and OCRopus show that some training on
+historical fonts and the application of lexical resources raise
+character accuracies beyond those of Finereader and that
+accuracies above 90% may be expected even for 16th century
+material.},
+  file      = {:Springmann2014a.pdf:PDF},
+}
+
+@InProceedings{UlHasan2016a,
+  author       = {Ul-Hasan, Adnan and Bukhari, Syed Saqib and Dengel, Andreas},
+  booktitle    = pro_of #{ 12th IAPR Workshop on Document Analysis Systems (DAS)},
+  title        = {{Ocroract: A sequence learning ocr system trained on isolated characters}},
+  year         = {2016},
+  address      = {Santorini, } # greece,
+  month        = apr,
+  organization = {IEEE},
+  pages        = {174--179},
+  abstract     = {Digitizing historical documents is crucial
+in preserving the literary heritage. With the availability
+of low cost capturing devices, libraries and institutes
+all over the world have old literature preserved in
+the form of scanned documents. However, searching
+through these scanned images is still a tedious job as
+one is unable to search through them. Contemporary
+machine learning approaches have been applied success-
+fully to recognize text in both printed and handwrit-
+ing form; however, these approaches require a lot of
+transcribed training data in order to obtain satisfactory
+performance. Transcribing the documents manually is
+a laborious and costly task, requiring many man-hours
+and language-specific expertise. This paper presents
+a generic iterative training framework to address this
+issue. The proposed framework is not only applicable
+to historical documents, but for present-day documents
+as well, where manually transcribed training data is
+unavailable. Starting with the minimal information
+available, the proposed approach iteratively corrects
+the training and generalization errors. Specifically, we
+have used a segmentation-based OCR method to train
+on individual symbols and then use the semi-corrected
+recognized text lines as the ground-truth data for
+segmentation-free sequence learning, which learns to
+correct the errors in the ground-truth by incorporating
+context-aware processing. The proposed approach is
+applied to a collection of 15 th century Latin documents.
+The iterative procedure using segmentation-free OCR
+was able to reduce the initial character error of about
+23% (obtained from segmentation-based OCR) to less
+than 7% in few iterations.},
+  file         = {:UlHasan2016a.pdf:PDF},
+  keywords     = {OCR, Historical Documents, Tesseract, OCRopus, LSTM Networks},
+}
+
+@InProceedings{Vamvakas2008a,
+  author       = {Vamvakas, Georgios and Gatos, Basilios and Stamatopoulos, Nikolaos and Perantonis, Stavros J},
+  booktitle    = pro_of #{ Eighth IAPR International Workshop on Document Analysis Systems},
+  title        = {A complete optical character recognition methodology for historical documents},
+  year         = {2008},
+  address      = {Nara, } # japan,
+  month        = sep,
+  organization = {IEEE},
+  pages        = {525--532},
+  abstract     = {In this paper a complete OCR methodology for
+recognizing historical documents, either printed or
+handwritten without any knowledge of the font, is
+presented. This methodology consists of three steps:
+The first two steps refer to creating a database for
+training using a set of documents, while the third one
+refers to recognition of new document images. First, a
+pre-processing step that includes image binarization
+and enhancement takes place. At a second step a top -
+down segmentation approach is used in order to detect
+text lines, words and characters. A clustering scheme
+is then adopted in order to group characters of similar
+shape. This is a semi-automatic procedure since the
+user is able to interact at any time in order to correct
+possible errors of clustering and assign an ASCII
+label. After this step, a database is created in order to
+be used for recognition. Finally, in the third step, for
+every new document image the above segmentation
+approach takes place while the recognition is based on
+the character database that has been produced at the
+previous step.},
+  file         = {:Vamvakas2008a.pdf:PDF},
+  url          = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.454.8600&rep=rep1&type=pdf},
+}
+
+@Article{Wick2018a,
+  author   = {Wick, Christoph and Reul, Christian and Puppe, Frank},
+  journal  = {ACM/IEEE Joint Conference on Digital Libraries 2018 (JCDL 2018)},
+  title    = {{Comparison of OCR Accuracy on Early Printed Books using the Open Source Engines Calamari and OCRopus}},
+  year     = {2018},
+  month    = jun,
+  number   = {1},
+  pages    = {79--96},
+  volume   = {33},
+  abstract = {This paper proposes a combination of a convolutional and an LSTM network to improve
+the accuracy of OCR on early printed books. While the default approach of line based
+OCR is to use a single LSTM layer as provided by the well-established OCR software
+OCRopus (OCRopy), we utilize a CNN- and Pooling-Layer combination in advance of
+an LSTM layer as implemented by the novel OCR software Calamari. Since historical
+prints often require book specific models trained on manually labeled ground truth
+(GT) the goal is to maximize the recognition accuracy of a trained model while keeping
+the needed manual effort to a minimum.
+We show, that the deep model significantly outperforms the shallow LSTM network
+when using both many and only a few training examples, although the deep network has
+a higher amount of trainable parameters. Hereby, the error rate is reduced by a factor
+of up to 55%, yielding character error rates (CER) of 1% and below for 1,000 lines
+of training. To further improve the results, we apply a confidence voting mechanism
+to achieve CERs below 0.5%. A simple data augmentation scheme and the usage of
+pretrained models reduces the CER further by up to 62% if only few training data is
+available. Thus, we require only 100 lines of GT to reach an average CER of 1.2%. The
+runtime of the deep model for training and prediction of a book behaves very similar to
+a shallow network when trained on a CPU. However, the usage of a GPU, as supported
+by Calamari, reduces the prediction time by a factor of at least four and the training
+time by more than six.},
+  file     = {:Wick2018a.pdf:PDF},
+  url      = {https://jlcl.org/content/2-allissues/1-heft1-2018/jlcl_2018-1_4.pdf},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
